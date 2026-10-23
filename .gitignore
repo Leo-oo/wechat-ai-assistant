@@ -1,0 +1,19 @@
+# This directory contains public documentation only. Upload deployment files to Releases.
+*.zip
+*.dmg
+*.exe
+*.dll
+*.db
+*.db-*
+*.dpapi
+*.log
+.env
+.env.*
+private/
+data/
+cache/
+logs/
+node_modules/
+__pycache__/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>微信AI助手 — 微信解密</title>
+  <desc>纯绿色圆角底块、白色打开的锁，以及绿色聊天气泡。仅底块外部透明。</desc>
+  <rect x="32" y="32" width="448" height="448" rx="88" fill="#07C160"/>
+  <path d="M194 233V178a74 74 0 0 1 148 0v10" fill="none" stroke="#FFFFFF" stroke-width="38" stroke-linecap="round"/>
+  <rect x="124" y="224" width="256" height="184" rx="48" fill="#FFFFFF"/>
+  <path d="M252 266c31 0 55 23 55 52s-24 52-54 52c-9 0-18-2-25-5l-21 12q-8 4-4-4l8-20c-9-9-14-22-14-35 0-29 24-52 55-52Z" fill="#07C160"/>
+</svg>

@@ -1,0 +1,35 @@
+name: 安装或使用问题
+description: 报告微信AI助手安装、群聊整理或推送问题
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: 请勿上传聊天正文、账号标识、二维码、密钥、令牌或整个个人数据目录。截图和脱敏诊断也请先自行检查。
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 使用平台
+      options:
+        - Windows
+        - Mac
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 工具版本和系统版本
+      placeholder: 例如 Windows v1.9，Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作步骤和实际结果
+      description: 说明在哪一步出现问题、期望看到什么、实际看到什么，可附检查过的截图。
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: 使用的 Agent（如有）
+      placeholder: WorkBuddy、Codex 或其他
