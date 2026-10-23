@@ -27,7 +27,6 @@
 
 ## 能做什么
 
-下面的界面截图来自 Windows 版。Mac 的接入、权限与升级步骤见 [Mac 安装指南](docs/macos.md)。
 
 | 功能 | 用途 | 使用方式 |
 | --- | --- | --- |
@@ -54,12 +53,10 @@
 
 ## 看看效果
 
-**Windows：群聊总结 / 日报**
-
-![Windows 群聊总结与日报界面](assets/windows-group.png)
+**群聊总结 / 日报**
 
 <details>
-<summary>展开查看日报长图示例</summary>
+<summary>查看群聊总结/日报示例</summary>
 
 示例用于展示排版，不代表真实群聊事实。图片较长，点击图片可单独打开阅读。
 
@@ -67,14 +64,27 @@
 
 </details>
 
+<details>
+<summary>查看群聊总结/日报安装界面</summary>
+
+![Windows 群聊总结与日报界面](assets/windows-group.png)
+
+</details>
+
+
 **手机微信：定时摘要效果**
+
+<details>
+<summary>查看定时摘要示例</summary>
 
 按设定频率接收“待你处理 / 你需知道 / 群聊摘要”。以下为内容与手机收件效果示例。
 
 <a href="assets/timed-summary-example.jpg"><img src="assets/timed-summary-example.jpg" width="420" alt="手机微信收到的定时消息摘要示例"></a>
 
+</details>
+
 <details>
-<summary>查看 Windows 定时摘要配置界面</summary>
+<summary>查看定时摘要配置界面</summary>
 
 ![Windows 定时摘要界面](assets/windows-summary.png)
 
