@@ -18,12 +18,12 @@
 
 ## 下载
 
-| 平台 | 本次准备发布的版本 | 文件格式 | 安装说明 |
+| 平台 | 已上传的私有草稿 | 文件格式 | 安装说明 |
 | --- | --- | --- | --- |
-| Windows | v1.9 · 2026-10-24 | ZIP，约 275 MiB | [查看安装步骤](docs/windows.md) |
-| Mac | v2.4.1 · 2026-10-23 | DMG，约 236 MiB | 打开镜像后查看随包说明；系统与芯片要求待核实 |
+| Windows | [v1.9 · 2026-10-24](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/untagged-7fac9fdacdf0c15930c2) | ZIP，约 275 MiB | [查看安装步骤](docs/windows.md) |
+| Mac | [v2.4.1 · 2026-10-23](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/untagged-0a253cf363a30b70e430) | DMG，约 236 MiB | 打开镜像后查看随包说明；系统与芯片要求待核实 |
 
-下载附件将在对应的 GitHub Release 中提供；当前页面为发布准备稿，尚未开放安装包下载。详见[下载与版本](docs/downloads.md)。
+两个平台的安装包及校验文件已上传到对应的 Release 草稿，安装包的 GitHub SHA256 与本地原文件一致。仓库保持私有，草稿尚未发布，以上链接供具备草稿访问权限的成员检查。公开下载尚未开启。详见[下载与版本](docs/downloads.md)。
 
 ## 能做什么
 
