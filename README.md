@@ -8,7 +8,7 @@
 
 **微信记录解密 · 群聊总结 / 日报 · 微信推送 · 定时摘要**
 
-[下载与版本](docs/downloads.md) · [Windows 安装](docs/windows.md) · [常见问题](docs/faq.md) · [隐私说明](docs/privacy.md)
+[下载与版本](docs/downloads.md) · [Windows 安装](docs/windows.md) · [Mac 安装](docs/macos.md) · [常见问题](docs/faq.md) · [隐私说明](docs/privacy.md)
 
 </div>
 
@@ -18,16 +18,16 @@
 
 ## 下载
 
-| 平台 | 已上传的私有草稿 | 文件格式 | 安装说明 |
+| 平台 | 当前版本 | 系统要求 | 安装说明 |
 | --- | --- | --- | --- |
-| Windows | [v1.9 · 2026-10-24](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/untagged-7fac9fdacdf0c15930c2) | ZIP，约 275 MiB | [查看安装步骤](docs/windows.md) |
-| Mac | [v2.4.1 · 2026-10-23](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/untagged-0a253cf363a30b70e430) | DMG，约 236 MiB | 打开镜像后查看随包说明；系统与芯片要求待核实 |
+| Windows | [下载 v1.9 · ZIP](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/windows-v1.9) | Windows 10 / 11 x64，电脑微信 4.x | [查看安装步骤](docs/windows.md) |
+| Mac | [下载 v2.4.1 · DMG](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/macos-v2.4.1) | macOS 14+，Apple Silicon（M 系列）；不支持 Intel | [查看安装步骤](docs/macos.md) |
 
-两个平台的安装包及校验文件已上传到对应的 Release 草稿，安装包的 GitHub SHA256 与本地原文件一致。仓库保持私有，草稿尚未发布，以上链接供具备草稿访问权限的成员检查。公开下载尚未开启。详见[下载与版本](docs/downloads.md)。
+在对应版本的 **Assets** 中下载安装包，不要下载 Source code。文件大小、SHA256 和直接下载入口见[下载与版本](docs/downloads.md)。
 
 ## 能做什么
 
-下面的界面与具体流程以 Windows v1.9 为准。Mac 的界面和功能范围以其随包说明为准。
+下面的界面截图来自 Windows 版。Mac 的接入、权限与升级步骤见 [Mac 安装指南](docs/macos.md)。
 
 | 功能 | 用途 | 使用方式 |
 | --- | --- | --- |
@@ -44,7 +44,7 @@
 
 > 分别生成“群A”和“群B”今天的日报，保存在电脑。
 
-日报默认输出 PNG 图片，同时保留 HTML 和 Markdown。可包含消息统计、活跃度、话题与结论、选题线索、需要留意的事项和链接；实际内容取决于当天消息，不为凑版面编造信息。
+日报默认输出 PNG 图片，同时保留 HTML 和 Markdown。PNG 需要可用的浏览器渲染环境，详情见各平台安装指南。报告可包含消息统计、活跃度、话题与结论、选题线索、需要留意的事项和链接；实际内容取决于当天消息，不为凑版面编造信息。
 
 配置微信推送后，还可以说：
 
@@ -67,9 +67,18 @@
 
 </details>
 
-**Windows：定时摘要**
+**手机微信：定时摘要效果**
+
+按设定频率接收“待你处理 / 你需知道 / 群聊摘要”。以下为内容与手机收件效果示例。
+
+<a href="assets/timed-summary-example.jpg"><img src="assets/timed-summary-example.jpg" width="420" alt="手机微信收到的定时消息摘要示例"></a>
+
+<details>
+<summary>查看 Windows 定时摘要配置界面</summary>
 
 ![Windows 定时摘要界面](assets/windows-summary.png)
+
+</details>
 
 ## Windows 三步开始
 
@@ -80,6 +89,14 @@
 以后直接在 Agent 中提出需求，这个面板可以关闭。微信推送与定时摘要按需配置，不是生成本地日报的必需步骤。
 
 Windows 包已带 Python、核心依赖和 WebView2 离线运行库。PNG 输出需要电脑已有可用的 Edge 或 Chrome。完整步骤见 [Windows 安装说明](docs/windows.md)。
+
+## Mac 三步开始
+
+1. 打开 DMG，将 **微信AI助手.app** 拖到“应用程序”后打开。
+2. 准备本机项目，查看并确认首次接入计划，按提示完成登录与系统授权。
+3. 接入完成后复制群日报安装请求，交给能够访问本机的 Agent。
+
+已有项目可以复用，更新程序通常不必重新取钥。Mac 的签名说明、权限、取消与恢复流程见 [Mac 安装指南](docs/macos.md)。
 
 ## 本地读取与模型处理
 

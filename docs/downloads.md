@@ -1,51 +1,42 @@
 # 下载与版本
 
-下面两个安装包与校验文件已上传到 GitHub Release 草稿，页面显示的安装包 SHA256 与本地原文件一致。仓库仍为私有，草稿尚未发布；只有具备相应草稿访问权限的成员可以检查，尚未开放公众下载。
+请选择与你的电脑对应的安装包。Windows 与 Mac 分别维护版本号。
 
-- [查看 Windows v1.9 草稿](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/untagged-7fac9fdacdf0c15930c2)
-- [查看 Mac v2.4.1 草稿](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/untagged-0a253cf363a30b70e430)
-
-| 平台 | 版本 | 文件 | 精确大小 | 拟用 Release 标签 |
+| 平台 | 系统要求 | 当前版本 | 下载 | 安装指南 |
 | --- | --- | --- | --- | --- |
-| Windows | v1.9 | 微信AI助手-Windows版v1.9-20261024.zip | 288,129,892 字节 | `windows-v1.9` |
-| Mac | v2.4.1 | 微信AI助手-Mac版v2.4.1-20261023.dmg | 247,863,351 字节 | `macos-v2.4.1` |
+| Windows | Windows 10 / 11 x64，电脑微信 4.x | [v1.9](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/windows-v1.9) | [ZIP · 约 275 MiB](https://github.com/Leo-oo/wechat-ai-assistant/releases/download/windows-v1.9/AI.-Windows.v1.9-20261024.zip) | [Windows 安装与使用](windows.md) |
+| Mac | macOS 14+，Apple Silicon（M 系列） | [v2.4.1](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/macos-v2.4.1) | [DMG · 约 236 MiB](https://github.com/Leo-oo/wechat-ai-assistant/releases/download/macos-v2.4.1/AI.-Mac.v2.4.1-20261023.dmg) | [Mac 安装与使用](macos.md) |
 
-两个平台独立维护版本号。Windows 和 Mac 请分别选择对应 Release 的安装附件。
+Mac 版不支持 Intel 芯片。Windows 请完整解压后运行根目录的 **微信AI助手.exe**；Mac 请将 App 拖到“应用程序”后打开。
 
-GitHub 上传时处理了中文文件名：当前 Windows 附件显示为 `AI.-Windows.v1.9-20261024.zip`，Mac 附件显示为 `AI.-Mac.v2.4.1-20261023.dmg`。这是文件名变化，安装包内容和校验值未改变。上表保留原始部署包名。使用随包的单文件 `.sha256` 校验时，可先将下载文件改回原始文件名；按下面命令直接计算哈希再比较时，不需要改名。
-
-GitHub 自动生成的“Source code (zip)”和“Source code (tar.gz)”是本说明仓库的快照，不能用于安装程序。
+GitHub 自动提供的 **Source code (zip / tar.gz)** 是本说明仓库的快照，不是安装包。
 
 ## 文件校验
 
-Windows ZIP 的 SHA256：
+下载后可以计算 SHA256，与下表比较，确认文件完整性。校验一致不等于代码签名或安全审查。
 
-```text
-a95cfc61fc6378654c6353eeae7cb1c8ddd7a57aaa6e134906dc649da850a2dc
-```
+| 下载文件 | 大小（字节） | SHA256 |
+| --- | ---: | --- |
+| `AI.-Windows.v1.9-20261024.zip` | 288,129,892 | `a95cfc61fc6378654c6353eeae7cb1c8ddd7a57aaa6e134906dc649da850a2dc` |
+| `AI.-Mac.v2.4.1-20261023.dmg` | 247,863,351 | `1e34a9a1e07b8bc9c83858aaa157b9cd8937160c66b16a02fbd8e87a0c6c0799` |
 
-Mac DMG 的 SHA256：
-
-```text
-1e34a9a1e07b8bc9c83858aaa157b9cd8937160c66b16a02fbd8e87a0c6c0799
-```
-
-哈希用于核对下载文件是否一致，不代表兼容性、代码签名或安全审查结论。
-
-Windows 可在 PowerShell 执行：
+Windows 在下载目录打开 PowerShell：
 
 ```powershell
 Get-FileHash -Algorithm SHA256 -LiteralPath '.\AI.-Windows.v1.9-20261024.zip'
 ```
 
-Mac 可在终端执行：
+Mac 在下载目录打开终端：
 
 ```sh
 shasum -a 256 'AI.-Mac.v2.4.1-20261023.dmg'
 ```
 
-## 当前核验范围
+Release 中的单文件 `.sha256` 保留了原始中文文件名。若使用它自动校验，请将文件分别改名为 `微信AI助手-Windows版v1.9-20261024.zip` 或 `微信AI助手-Mac版v2.4.1-20261023.dmg`；使用上面的命令直接比较哈希则无需改名。
 
-Windows v1.9 已完成构建、文件清单和解压校验、隔离运行环境检查，以及 9 个桌面界面场景检查；上一轮自动测试 258 项通过、2 项跳过。尚未在另一台干净电脑完成首次真实接入验收。包内记录的第三方原生组件公开分发审查尚未完成。
+## 版本说明
 
-Mac v2.4.1 本次仅核验文件名、大小及 SHA256；尚未在这台 Windows 电脑挂载或运行。支持的 macOS 版本、芯片架构、签名与安装步骤需要从 Mac 当前发行资料补齐。
+- [Windows v1.9：安装优化与示例查看](../release-notes/windows-v1.9.md)
+- [Mac v2.4.1：安装与接入说明](../release-notes/macos-v2.4.1.md)
+
+Windows 程序尚未代码签名；Mac App 使用 ad-hoc 签名，未经过 Apple 开发者签名和公证。遇到系统阻止打开时，请保留完整提示并参考安装指南，不要关闭系统安全保护。

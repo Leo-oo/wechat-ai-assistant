@@ -1,6 +1,8 @@
 # Windows v1.9 · 2026-10-24
 
-发布状态：私有草稿。部署包及校验文件已上传，GitHub 显示的安装包 SHA256 与本地原文件一致；尚未开放公众下载，包内第三方原生组件的公开分发审查尚未完成。
+[下载安装包（ZIP · 约 275 MiB）](https://github.com/Leo-oo/wechat-ai-assistant/releases/download/windows-v1.9/AI.-Windows.v1.9-20261024.zip) · [Windows 安装指南](https://github.com/Leo-oo/wechat-ai-assistant/blob/main/docs/windows.md)
+
+适用于 Windows 10 / 11 x64、电脑微信 4.x。微信小版本兼容性以实际接入检查结果为准。
 
 ## 这版更新
 
@@ -19,7 +21,7 @@
 
 完整解压后运行根目录的“微信AI助手.exe”，保留“程序”和“运行环境”文件夹。
 
-## 验证范围与限制
+## 注意事项
 
 - 文件清单、核心程序一致性、ZIP 解压复验及启动入口检查通过。
 - 9 个桌面界面场景检查通过；上一轮自动测试 258 项通过、2 项跳过。
