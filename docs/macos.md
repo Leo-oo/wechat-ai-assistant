@@ -1,6 +1,6 @@
 # Mac 安装与使用
 
-适用于 **Mac v2.4.1**。需要 **macOS 14 或更高版本、Apple Silicon（M 系列）芯片**，不支持 Intel Mac。
+需要 **macOS 14 或更高版本、Apple Silicon（M 系列）芯片**，不支持 Intel Mac。
 
 [下载安装包](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/macos-v2.4.1) · [常见问题](faq.md)
 
