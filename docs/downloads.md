@@ -36,9 +36,8 @@ Windows v2.0 的 Release 同时提供同名 `.sha256` 校验文件，对应当�
 
 ## 版本说明
 
-- [Windows v2.0：群日报检测与证据核验](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/windows-v2.0)
-- [Mac v2.4.2：部署包与文件完整性](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/macos-v2.4.2)
+- [Windows v2.0](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/windows-v2.0)
+- [Mac v2.4.2](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/macos-v2.4.2)
 
-历史版本说明：[Windows v1.9](../release-notes/windows-v1.9.md) · [Mac v2.4.1](../release-notes/macos-v2.4.1.md)。
 
 Windows 程序尚未代码签名；Mac App 使用 ad-hoc 签名，未经过 Apple 开发者签名和公证。遇到系统阻止打开时，请保留完整提示并参考安装指南，不要关闭系统安全保护。
