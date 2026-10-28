@@ -20,8 +20,8 @@
 
 | 平台 | 当前版本 | 系统要求 | 安装说明 |
 | --- | --- | --- | --- |
-| Windows | [下载 v1.9 · ZIP](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/windows-v1.9) | Windows 10 / 11 x64，电脑微信 4.x | [查看安装步骤](docs/windows.md) |
-| Mac | [下载 v2.4.1 · DMG](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/macos-v2.4.1) | macOS 14+，Apple Silicon（M 系列）；不支持 Intel | [查看安装步骤](docs/macos.md) |
+| Windows | [下载 v2.0 · ZIP](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/windows-v2.0) | Windows 10 / 11 x64，电脑微信 4.x | [查看安装步骤](docs/windows.md) |
+| Mac | [下载 v2.4.2 · DMG](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/macos-v2.4.2) | macOS 14+，Apple Silicon（M 系列）；不支持 Intel | [查看安装步骤](docs/macos.md) |
 
 在对应版本的 **Assets** 中下载安装包，不要下载 Source code。文件大小、SHA256 和直接下载入口见[下载与版本](docs/downloads.md)。
 
