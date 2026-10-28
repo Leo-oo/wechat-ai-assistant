@@ -4,8 +4,8 @@
 
 | 平台 | 系统要求 | 当前版本 | 下载 | 安装指南 |
 | --- | --- | --- | --- | --- |
-| Windows | Windows 10 / 11 x64，电脑微信 4.x | [v1.9](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/windows-v1.9) | [ZIP · 约 275 MiB](https://github.com/Leo-oo/wechat-ai-assistant/releases/download/windows-v1.9/AI.-Windows.v1.9-20261024.zip) | [Windows 安装与使用](windows.md) |
-| Mac | macOS 14+，Apple Silicon（M 系列） | [v2.4.1](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/macos-v2.4.1) | [DMG · 约 236 MiB](https://github.com/Leo-oo/wechat-ai-assistant/releases/download/macos-v2.4.1/AI.-Mac.v2.4.1-20261023.dmg) | [Mac 安装与使用](macos.md) |
+| Windows | Windows 10 / 11 x64，电脑微信 4.x | [v2.0](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/windows-v2.0) | [ZIP · 约 275 MiB](https://github.com/Leo-oo/wechat-ai-assistant/releases/download/windows-v2.0/Wechat-AI-Assistant-Windows-v2.0-20261025.zip) | [Windows 安装与使用](windows.md) |
+| Mac | macOS 14+，Apple Silicon（M 系列） | [v2.4.2](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/macos-v2.4.2) | [DMG · 约 236 MiB](https://github.com/Leo-oo/wechat-ai-assistant/releases/download/macos-v2.4.2/AI.-Mac.v2.4.2-20261028.dmg) | [Mac 安装与使用](macos.md) |
 
 Mac 版不支持 Intel 芯片。Windows 请完整解压后运行根目录的 **微信AI助手.exe**；Mac 请将 App 拖到“应用程序”后打开。
 
@@ -17,26 +17,28 @@ GitHub 自动提供的 **Source code (zip / tar.gz)** 是本说明仓库的快�
 
 | 下载文件 | 大小（字节） | SHA256 |
 | --- | ---: | --- |
-| `AI.-Windows.v1.9-20261024.zip` | 288,129,892 | `a95cfc61fc6378654c6353eeae7cb1c8ddd7a57aaa6e134906dc649da850a2dc` |
-| `AI.-Mac.v2.4.1-20261023.dmg` | 247,863,351 | `1e34a9a1e07b8bc9c83858aaa157b9cd8937160c66b16a02fbd8e87a0c6c0799` |
+| `Wechat-AI-Assistant-Windows-v2.0-20261025.zip` | 288,137,692 | `d8c9820a961627404fe1ca2691dca191762b67a2e9f4258433c475407dd2895d` |
+| `AI.-Mac.v2.4.2-20261028.dmg` | 247,861,734 | `bba80d0accd16fe326effe84459750dfd41141cdcb8201c031c487e5be8baac7` |
 
 Windows 在下载目录打开 PowerShell：
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\AI.-Windows.v1.9-20261024.zip'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Wechat-AI-Assistant-Windows-v2.0-20261025.zip'
 ```
 
 Mac 在下载目录打开终端：
 
 ```sh
-shasum -a 256 'AI.-Mac.v2.4.1-20261023.dmg'
+shasum -a 256 'AI.-Mac.v2.4.2-20261028.dmg'
 ```
 
-Release 中的单文件 `.sha256` 保留了原始中文文件名。若使用它自动校验，请将文件分别改名为 `微信AI助手-Windows版v1.9-20261024.zip` 或 `微信AI助手-Mac版v2.4.1-20261023.dmg`；使用上面的命令直接比较哈希则无需改名。
+Windows v2.0 的 Release 同时提供同名 `.sha256` 校验文件，对应当前英文附件名，无需改名。Mac v2.4.2 请使用上面的命令与表中 SHA256 比较；不要用旧版本的校验文件检查新安装包。
 
 ## 版本说明
 
-- [Windows v1.9：安装优化与示例查看](../release-notes/windows-v1.9.md)
-- [Mac v2.4.1：安装与接入说明](../release-notes/macos-v2.4.1.md)
+- [Windows v2.0：群日报检测与证据核验](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/windows-v2.0)
+- [Mac v2.4.2：部署包与文件完整性](https://github.com/Leo-oo/wechat-ai-assistant/releases/tag/macos-v2.4.2)
+
+历史版本说明：[Windows v1.9](../release-notes/windows-v1.9.md) · [Mac v2.4.1](../release-notes/macos-v2.4.1.md)。
 
 Windows 程序尚未代码签名；Mac App 使用 ad-hoc 签名，未经过 Apple 开发者签名和公证。遇到系统阻止打开时，请保留完整提示并参考安装指南，不要关闭系统安全保护。
